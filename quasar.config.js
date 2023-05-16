@@ -23,8 +23,8 @@ module.exports = configure(function (ctx) {
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli-webpack/boot-files
     boot: [
-
       'axios','title'
+
     ],
 
     // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js#Property%3A-css
@@ -85,7 +85,7 @@ module.exports = configure(function (ctx) {
 
     // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js#Property%3A-framework
     framework: {
-      config: {},
+      //  config:  notify: { /* look at QuasarConfOptions from the API card */ },
 
       // iconSet: 'material-icons', // Quasar icon set
       // lang: 'en-US', // Quasar language pack
@@ -99,7 +99,7 @@ module.exports = configure(function (ctx) {
 
       // Quasar plugins
       plugins: [
-        'Notify', 'Dialog', 'LocalStorage',
+        "Notify", "Dialog", "LocalStorage", "LoadingBar", "Loading"
       ]
     },
 
@@ -203,7 +203,7 @@ module.exports = configure(function (ctx) {
         // protocol: 'myapp://path',
 
         // Windows only
-        // win32metadata: { ... }
+        // win32metadata: { … }
       },
 
       builder: {

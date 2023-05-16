@@ -106,7 +106,7 @@ export default {
               message: `내용은 필수입력입니다`,
               icon:"warning",
               color: "red",
-          });
+        });
       }
     },
     removeItem(id){

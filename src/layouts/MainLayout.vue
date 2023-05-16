@@ -14,8 +14,9 @@
         <q-toolbar-title>
           <q-btn to="/" label="Quasar App" class="text-subtitle1" unelevated></q-btn>
         </q-toolbar-title>
-
+        <q-btn to="/signin" flat text-color="white" label="회원가입"></q-btn>
         <div>Quasar v{{ $q.version }}</div>
+        <!--<div>Quasar v{{ $q.version }}</div>-->
       </q-toolbar>
     </q-header>
 
@@ -67,6 +68,18 @@ const linksList = [
     caption: 'vue + store 실습',
     icon: 'home',
     link: '/todo'
+  },
+  {
+    title: "db todo list",
+    caption: "vue + database",
+    icon: "chat",
+    link: "/dbtodo",
+  },
+  {
+    title: "db todo list",
+    caption: "vue + store + database",
+    icon: "chat",
+    link: "/dbtodo",
   },
   /**{
     title: 'Docs',
